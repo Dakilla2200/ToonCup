@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Embed</title>
+    <style>
+        /* Reset margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ensure the body and html take up the full height of the screen */
+        html, body {
+            height: 100%;
+        }
+
+        /* The parent div needs to take up the full screen */
+        #game-playblock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* The iframe needs to take up the full width and height of its parent */
+        #game-object {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #game-object iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removes the border around the iframe */
+        }
+    </style>
+</head>
+<body>
+    <div id="game-playblock" class="game-playblock mb-3">
+        <div id="game-object" class="game-object ratio ratio-3000001x3000000">
+            <iframe src="https://emea.iframed.cn.dmti.cloud/content/336/toon-cup-2019/game/uk/index.6b82e670/index.html" allowfullscreen="" scrolling="no"></iframe>
+        </div>
+    </div> 
+</body>
+</html>
